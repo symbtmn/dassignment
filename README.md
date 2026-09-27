@@ -29,7 +29,7 @@ This project focuses on the implementation, empirical testing, and complexity an
 * **Master Theorem:** Case 2, resulting in $T(n) = \Theta(n \log n)$.
 
 ## C. Experimental Results
-The performance metrics were generated and exported to `results/results.csv`.
+The performance metrics were generated and exported to `results`.
 
 ### Summary Insights:
 * **Recursion Depth:** QuickSort maintained a maximum recursion depth bounded by $O(\log n)$ across all array distributions (including sorted and duplicate-heavy arrays) thanks to tail-recursion optimization.
