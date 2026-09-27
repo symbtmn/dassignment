@@ -13,7 +13,6 @@ public class AlgorithmTest {
         System.out.println("=== ALL TESTS PASSED SUCCESSFULLY! ===");
     }
 
-    // 1. Тестирование MergeSort и QuickSort
     private static void testSorting() {
         System.out.println("Testing Sorting Algorithms...");
 
@@ -43,7 +42,7 @@ public class AlgorithmTest {
         System.out.println("-> Sorting tests passed!");
     }
 
-    // 2. Тестирование Deterministic Select (100 случайных тестов)
+    // Deterministic Select (100 случайных тестов)
     private static void testDeterministicSelect100Times() {
         System.out.println("Testing Deterministic Select (100 runs)...");
         Random rand = new Random();
@@ -63,11 +62,11 @@ public class AlgorithmTest {
         System.out.println("-> 100 Deterministic Select tests passed!");
     }
 
-    // 3. Тестирование Closest Pair (сравнение с brute-force для n <= 2000)
+    // Closest Pair (сравнение с brute-force для n <= 2000)
     private static void testClosestPairWithBruteForce() {
         System.out.println("Testing Closest Pair against Brute-Force (n <= 2000)...");
         Random rand = new Random();
-        int n = 500; // n <= 2000
+        int n = 500;
 
         point[] points = new point[n];
         for (int i = 0; i < n; i++) {
@@ -81,7 +80,7 @@ public class AlgorithmTest {
         System.out.println("-> Closest Pair test passed!");
     }
 
-    // Вспомогательные методы генерации
+
     private static int[] generateRandomArray(int n) {
         Random r = new Random();
         int[] a = new int[n];
