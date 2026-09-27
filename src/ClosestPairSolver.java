@@ -45,7 +45,7 @@ public class ClosestPairSolver {
         double d2 = closest(rightX, rightY, depth + 1);
         double d = Math.min(d1, d2);
 
-        final double minD = d; // Создаем неизменяемую копию для лямбды
+        final double minD = d;
         point[] strip = Arrays.stream(ptsY)
                 .filter(p -> Math.abs(p.x - midPoint.x) < minD)
                 .toArray(point[]::new);

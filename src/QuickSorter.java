@@ -16,7 +16,6 @@ public class QuickSorter {
             maxRecursionDepth = Math.max(maxRecursionDepth, depth);
             int pIndex = partition(a, low, high);
 
-            // Рекурсивно вызываем для МЕНЬШЕЙ части, а БОЛЬШУЮ обрабатываем цикловать (итеративно)
             if (pIndex - low < high - pIndex) {
                 sort(a, low, pIndex - 1, depth + 1);
                 low = pIndex + 1;

@@ -21,7 +21,7 @@ public class Experiment {
         Arrays.sort(arr2);
         assert Arrays.equals(arr1, arr2) : "MergeSort Error";
 
-        // Deterministic Select test
+
         int[] arr3 = {12, 3, 5, 7, 19, 1, 4, 26};
         int val = DeterministicSelector.select(arr3.clone(), 3);
         int[] sorted3 = arr3.clone();
@@ -41,7 +41,6 @@ public class Experiment {
             resultsDir.mkdirs();
         }
 
-        // 2. Файлды ашып, деректерді жазамыз:
         try (PrintWriter writer = new PrintWriter(new FileWriter("results/results.csv"))) {
             writer.println("Algorithm,InputType,Size,Time_ns,MaxDepth,Comparisons");
 
